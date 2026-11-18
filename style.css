@@ -117,3 +117,21 @@ footer {
   background: #5c3b28;
   color: white;
 }
+.accueil {
+  position: relative;
+}
+
+.accueil video {
+  object-fit: cover;
+}
+
+.accueil .introduction {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  color: white;
+  text-shadow: 0 2px 6px #3b2418;
+  pointer-events: none;
+}
