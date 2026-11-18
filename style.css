@@ -1,1 +1,31 @@
+body {
+  margin: 0;
+  background: #f3efeb;
+  color: #5c3b28;
+  font-family: Arial, sans-serif;
+}
 
+header, footer {
+  padding: 24px;
+  background: #5c3b28;
+  color: white;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+a {
+  color: inherit;
+}
