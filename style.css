@@ -1,1 +1,119 @@
+body {
+  margin: 0;
+  background: #f3efeb;
+  color: #5c3b28;
+  font-family: Arial, sans-serif;
+}
 
+a {
+  color: inherit;
+}
+
+.entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px clamp(20px, 4vw, 60px);
+  background: #5c3b28;
+  color: white;
+}
+
+.logo,
+.introduction h1 {
+  font-family: "Pinyon Script", cursive;
+  font-weight: normal;
+}
+
+.logo {
+  font-size: clamp(38px, 5vw, 62px);
+  text-decoration: none;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu summary span {
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin: 0 auto;
+  background: white;
+}
+
+.menu nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  min-width: 175px;
+  padding: 12px;
+  background: #5c3b28;
+}
+
+.menu nav a {
+  display: block;
+  padding: 10px;
+}
+
+.accueil video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 72vh;
+  object-fit: contain;
+  background: #211812;
+}
+
+.introduction {
+  padding: 36px 20px;
+  text-align: center;
+}
+
+.bienvenue {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.85rem;
+}
+
+.introduction h1 {
+  margin: 12px 0 0;
+  font-size: clamp(56px, 10vw, 120px);
+  line-height: 1.1;
+}
+
+.contenu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+}
+
+.contenu section {
+  margin: 32px 0;
+}
+
+h2 {
+  font-family: Georgia, serif;
+}
+
+footer {
+  padding: 24px;
+  background: #5c3b28;
+  color: white;
+}
