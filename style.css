@@ -150,51 +150,8 @@ footer {
 
     color: #67442f;
 }
-.logo-symbol {
-    width: 145px;
-    height: 125px;
 
-    position: relative;
 
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 75px;
-    line-height: 0.7;
-
-    margin-left: 5px;
-    margin-bottom: 8px;
-}
-
-.logo-symbol span {
-    position: absolute;
-    display: block;
-}
-
-.logo-symbol span:first-child {
-    top: 12px;
-    left: 25px;
-
-    transform: rotate(-25deg);
-}
-
-.logo-symbol span:last-child {
-    top: 48px;
-    left: 58px;
-
-    transform: rotate(155deg);
-}
-
-.logo-name {
-    font-family: "Brush Script MT",
-                 "Segoe Script",
-                 cursive;
-
-    font-size: 47px;
-    font-style: italic;
-
-    letter-spacing: -2px;
-
-    margin-left: 7px;
-}
 .footer-column h3 {
     margin: 0 0 9px 0;
 
