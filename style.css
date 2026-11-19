@@ -4,81 +4,93 @@ body {
   color: #5c3b28;
   font-family: Arial, sans-serif;
 }
-
 a {
   color: inherit;
 }
 
 .entete {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px clamp(20px, 4vw, 60px);
-  background: #5c3b28;
-  color: white;
+    width: 100%;
+    height: 110px;
+    background-color: #67442f;
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
 }
 .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    width: 225px;
+    width: 230px;
 }
+
 .logo img {
     width: 210px;
     height: auto;
     display: block;
 }
-.logo,
-.introduction h1 {
-  font-family: "Pinyon Script", cursive;
-  font-weight: normal;
+.navigation {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 42px;
 }
 
-.logo {
-  font-size: clamp(38px, 5vw, 62px);
-  text-decoration: none;
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+}
+.navigation a:hover {
+    opacity: 0.65;
 }
 
 .menu {
-  position: relative;
+    margin-left: 45px;
 }
-
 .menu summary {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-  width: 44px;
-  height: 44px;
-  list-style: none;
-  cursor: pointer;
+    width: 43px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
 }
 
 .menu summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
-
 .menu summary span {
-  display: block;
-  width: 32px;
-  height: 2px;
-  margin: 0 auto;
-  background: white;
+    width: 43px;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
 }
-
 .menu nav {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  z-index: 1;
-  min-width: 175px;
-  padding: 12px;
-  background: #5c3b28;
+    position: absolute;
+    right: 45px;
+    top: 90px;
+    background-color: #67442f;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 150px;
 }
-
 .menu nav a {
-  display: block;
-  padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+.menu nav a:hover {
+    opacity: 0.7;
 }
 
 .accueil video {
