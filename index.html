@@ -10,38 +10,70 @@
 </head>
 <body>
   <header class="entete">
-    <img src="Logo Minimaliste Professionnel Marron Beige.png" alt="Logo de mon site" width="50" height="50">
-    <a class="logo" href="index.html">Popuparis</a>
+  <a href="index.html" class="logo">
+    <img src="1.png" alt="Popuparis">
+  </a>
 
-    <details class="menu">
-      <summary aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </summary>
-<nav aria-label="Sommaire">
-  <a href="mode.html">Mode</a>
-  <a href="beaute.html">Beauté</a>
-  <a href="art.html">Art</a>
-  <a href="#glossaire">Glossaire</a>
-  <a href="#avis">Avis</a>
-</nav>
-    </details>
-  </header>
+  <nav class="navigation" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="mode.html">Mode</a>
+    <a href="beaute.html">Beauté</a>
+    <a href="art.html">Art</a>
+  </nav>
+
+  <details class="menu">
+    <summary aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </summary>
+
+    <nav aria-label="Menu secondaire">
+      <a href="#glossaire">Glossaire</a>
+      <a href="#avis">Avis</a>
+    </nav>
+  </details>
+</header>
 
   <main>
     <article>
     <section id="accueil" class="accueil">
- <video controls autoplay muted playsinline
-       aria-label="Vidéo de présentation de Paris">
+  <video autoplay muted loop playsinline
+         aria-label="Vidéo de présentation de Paris">
     <source src="paris-accueil.mp4" type="video/mp4">
-<a href="paris-accueil.mp4">Ouvrir la vidéo de Paris</a>
   </video>
-
   <div class="introduction">
-    <p class="bienvenue">Bienvenue sur</p>
+    <p class="bienvenue">BIENVENUE SUR</p>
     <h1>Popuparis</h1>
   </div>
+  <button class="play-button" aria-label="Lire la vidéo">
+    <span>▶</span>
+  </button>
+</section>
+
+      <section class="categories">
+    <h2>Le guide des boutiques éphémères à Paris.</h2>
+    <div class="categories-container">
+
+        <a href="mode.html" class="categorie">
+            <div class="categorie-icon">
+                <span>♧</span>
+            </div>
+            <p>Mode</p>
+        </a>
+        <a href="beaute.html" class="categorie">
+            <div class="categorie-icon">
+                <span>◉</span>
+            </div>
+            <p>Beauté</p>
+        </a>
+        <a href="art.html" class="categorie">
+            <div class="categorie-icon">
+                <span>♧</span>
+            </div>
+            <p>Art</p>
+        </a>
+    </div>
 </section>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
