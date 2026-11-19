@@ -136,24 +136,7 @@ a {
     line-height: 1;
     color: white;
 }
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    width: 70px;
-    height: 70px;
-    border: 0;
-    border-radius: 50%;
-    background: rgba(30, 30, 30, 0.65);
-    color: white;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
+
 .categories {
     width: 100%;
     background-color: #f7f3f0;
@@ -275,23 +258,17 @@ footer {
 .social-icons {
     display: flex;
     align-items: center;
-
     gap: 30px;
-
     margin-top: 18px;
     margin-left: 5px;
 }
 {
     width: 37px;
     height: 37px;
-
     border: 1.5px solid #67442f;
     border-radius: 50%;
-
     display: block;
-
     text-decoration: none;
-
     transition: background-color 0.2s ease;
 }
 
@@ -300,12 +277,9 @@ footer {
 }
  {
     margin: 5px 0 27px 9px;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 14px;
     font-style: italic;
-
     color: #67442f;
 }
 
@@ -313,25 +287,17 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     min-width: 268px;
     height: 48px;
-
     padding: 0 20px;
-
     border: 1px solid #67442f;
     border-radius: 30px;
-
     color: #67442f;
-
     text-decoration: none;
-
     font-family: Georgia, "Times New Roman", serif;
     font-size: 14px;
     font-style: italic;
-
     box-sizing: border-box;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease;
@@ -344,68 +310,49 @@ footer {
 
 .footer-bottom {
     width: 100%;
-
     text-align: center;
-
     color: #67442f;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 16px;
-
     margin-top: 30px;
 }
 
 @media (max-width: 900px) {
-
     .footer {
         padding: 50px 6% 25px;
     }
-
     .footer-main {
         grid-template-columns: 1fr 1fr;
         row-gap: 50px;
     }
-
     .footer-logo {
         grid-column: 1 / -1;
     }
-
     .footer-social {
         align-items: flex-start;
     }
 }
-
-
 @media (max-width: 600px) {
-
     .footer {
         min-height: auto;
-
         padding: 45px 30px 25px;
     }
-
     .footer-main {
         display: flex;
         flex-direction: column;
-
         gap: 45px;
     }
-
     .footer-logo {
         align-items: center;
         width: 100%;
     }
-
     .footer-links,
     .footer-social {
         width: 100%;
     }
-
     .footer-social {
         align-items: flex-start;
     }
-
     .footer-bottom {
         margin-top: 45px;
         font-size: 14px;
