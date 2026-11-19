@@ -439,23 +439,3 @@ ody {
     font-size: 14px;
   }
 }
-
-/* ===== ACCUEIL ===== */
-.accueil {
-  position: relative;
-}
-
-.accueil video {
-  object-fit: cover;
-}
-
-.accueil .introduction {
-  position: absolute;
-  top: 27%;
-  left: 0;
-  right: 0;
-  padding: 0 16px;
-  color: white;
-  text-shadow: 0 1px 4px #f3efeb;
-  pointer-events: none;
-}  
