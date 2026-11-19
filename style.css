@@ -200,12 +200,17 @@ ody {
   margin: 0;
 }
 
-  
+ody {
+  margin: 0;
+}
+
+/* ===== CARROUSEL ===== */
 #myCarousel .carousel-inner .item img {
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
+
 #myCarousel .carousel-caption {
   left: 0;
   right: 0;
@@ -214,6 +219,7 @@ ody {
   background: rgba(95, 70, 55, 0.75);
   text-shadow: none;
 }
+
 #myCarousel .carousel-caption h3 {
   margin: 0 0 8px;
   font-family: 'Pinyon Script', cursive;
@@ -221,6 +227,7 @@ ody {
   font-weight: normal;
   color: #fff;
 }
+
 #myCarousel .carousel-caption p {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -229,15 +236,18 @@ ody {
   text-transform: uppercase;
   color: #fff;
 }
+
 #myCarousel .carousel-indicators {
   display: none;
 }
+
 #myCarousel .carousel-control {
   width: 100px;
   background-image: none;
   filter: none;
   opacity: 1;
 }
+
 #myCarousel .carousel-control .glyphicon {
   width: 54px;
   height: 54px;
@@ -249,18 +259,20 @@ ody {
   font-size: 22px;
   text-shadow: none;
 }
+
 #myCarousel .carousel-control .glyphicon-chevron-left {
   left: 30px;
   right: auto;
   margin-left: 0;
 }
+
 #myCarousel .carousel-control .glyphicon-chevron-right {
   right: 30px;
   left: auto;
   margin-right: 0;
 }
 
-
+/* ===== FOOTER ===== */
 .footer {
   width: 100%;
   min-height: 439px;
@@ -427,6 +439,7 @@ ody {
   }
 }
 
+/* ===== ACCUEIL ===== */
 .accueil {
   position: relative;
 }
@@ -444,4 +457,4 @@ ody {
   color: white;
   text-shadow: 0 1px 4px #f3efeb;
   pointer-events: none;
-}
+}  
