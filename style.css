@@ -17,7 +17,17 @@ a {
   background: #5c3b28;
   color: white;
 }
-
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 225px;
+}
+.logo img {
+    width: 210px;
+    height: auto;
+    display: block;
+}
 .logo,
 .introduction h1 {
   font-family: "Pinyon Script", cursive;
