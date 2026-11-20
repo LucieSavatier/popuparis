@@ -490,10 +490,8 @@ body {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 60px 20px;
+  gap: 48px;
+  padding: 50px 45px;
   box-sizing: border-box;
 }
 
