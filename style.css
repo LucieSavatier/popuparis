@@ -488,18 +488,20 @@ body {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  max-width: 1150px;
+  margin: 0 auto;
   padding: 60px 20px;
+  box-sizing: border-box;
 }
 
 .card {
   --card-bg: #f7f3f0;
   --card-text: #67442f;
 
-  width: 340px;
+  width: 100%;
   background: var(--card-bg);
   color: var(--card-text);
   border: 1px solid #67442f;
@@ -509,7 +511,6 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
 }
 
-/* Au survol : la card beige devient marron */
 .card:hover {
   --card-bg: #67442f;
   --card-text: #f7f3f0;
@@ -561,7 +562,6 @@ body {
   font-size: 15px;
   color: var(--card-text);
 }
-/* ===== RÉSEAUX SOCIAUX ===== */
 .wrapper {
   display: inline-flex;
   list-style: none;
