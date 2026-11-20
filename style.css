@@ -670,3 +670,85 @@ display: block;
 .wrapper .icon:first-child {
   margin-left: 0;
 }
+* ===== PAGE DÉTAIL ===== */
+.detail {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 30px 60px;
+  box-sizing: border-box;
+  color: #67442f;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.detail h2 {
+  margin: 0 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.detail p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Infos + bouton à droite */
+.detail__infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.bouton-officiel {
+  flex-shrink: 0;
+  padding: 14px 34px;
+  background-color: #67442f;
+  color: #f7f3f0;
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.bouton-officiel:hover {
+  opacity: 0.8;
+  color: #f7f3f0;
+  text-decoration: none;
+}
+
+.detail__description,
+.detail__acces {
+  margin-bottom: 40px;
+}
+
+.detail__description p {
+  text-align: justify;
+}
+
+.detail__citation {
+  font-weight: 700;
+}
+
+.detail__contact a {
+  font-weight: 700;
+  color: #67442f;
+  text-decoration: none;
+}
+
+.detail__contact a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 650px) {
+  .detail__infos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-page .overlay h1 {
+    font-size: 56px;
+  }
+}
