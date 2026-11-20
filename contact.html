@@ -50,16 +50,15 @@
         ou utiliser le formulaire ci-dessous.
       </p>
 
-      <form class="contact__form" id="formulaire-contact"
-            action="https://formspree.io/f/VOTRE_ID" method="POST">
+      <form class="contact__form" id="formulaire-contact">
 
         <label for="email">Votre adresse e-mail</label>
         <input type="email" id="email" name="email"
-               placeholder="prenom.nom@exemple.fr" required>
+               placeholder="prenom.nom@exemple.fr">
 
         <label for="message">Votre message</label>
         <textarea id="message" name="message" rows="6"
-                  placeholder="Écrivez votre message ici…" required></textarea>
+                  placeholder="Écrivez votre message ici…"></textarea>
 
         <button type="submit" class="contact__bouton">Envoyer</button>
         <p class="contact__retour" id="retour" hidden></p>
@@ -122,28 +121,15 @@
   </footer>
 
   <script>
+    // Formulaire factice : aucun message n'est réellement envoyé
     var form = document.getElementById("formulaire-contact");
     var retour = document.getElementById("retour");
-    var erreur = "Oups, l'envoi a échoué. Écrivez-nous directement à contact@popupparis.fr.";
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { "Accept": "application/json" }
-      }).then(function (r) {
-        retour.hidden = false;
-        if (r.ok) {
-          retour.textContent = "Merci ! Votre message a bien été envoyé.";
-          form.reset();
-        } else {
-          retour.textContent = erreur;
-        }
-      }).catch(function () {
-        retour.hidden = false;
-        retour.textContent = erreur;
-      });
+      retour.hidden = false;
+      retour.textContent = "Merci ! Votre message a bien été envoyé.";
+      form.reset();
     });
   </script>
 </body>
