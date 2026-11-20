@@ -117,3 +117,6 @@
     border-radius: 30px;
   }
 }
+.hero-page::after {
+  background: rgba(103, 68, 47, 0.1);
+}
