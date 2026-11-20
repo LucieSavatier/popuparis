@@ -671,13 +671,19 @@ display: block;
   margin-left: 0;
 }
 * ===== PAGE DÉTAIL ===== */
-.detail {
+main .detail {
   max-width: 1000px;
   margin: 0 auto;
   padding: 45px 6% 60px;
   box-sizing: border-box;
   color: #67442f;
   font-family: "Montserrat", Arial, sans-serif;
+}
+
+.detail iframe {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
 }
 .detail h2 {
   margin: 0 0 14px;
