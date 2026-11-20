@@ -507,6 +507,8 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+  text-decoration: none;
+display: block;
 }
 
 .card:hover {
