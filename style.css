@@ -672,90 +672,161 @@ display: block;
 }
 
 * ===== PAGE DÉTAIL ===== */
-main .detail {
-    max-width: 1200px;
+.detail {
+    width: 100%;
+
+    max-width: 1250px;
+
     margin: 0 auto;
-    padding: 50px 60px;
-    box-sizing: border-box;
-    text-align: justify;
+
+    padding: 38px 40px 55px;
+
     color: #67442f;
-    font-family: "Montserrat", Arial, sans-serif;
 }
 
-.detail iframe {
-  width: 100%;
-  display: block;
-  border-radius: 20px;
-}
+
+/* =========================================================
+   TITRES
+========================================================= */
+
 .detail h2 {
-  margin: 0 0 14px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 400;
+    margin: 0 0 17px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    color: #67442f;
 }
+
+
+/* =========================================================
+   TEXTES
+========================================================= */
 
 .detail p {
-  margin: 0 0 10px;
-  font-size: 16px;
-  line-height: 1.6;
+    margin: 0 0 10px;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+
+    color: #67442f;
 }
 
-/* Infos + bouton à droite */
-.detail__infos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
+
+/* TEXTE EN GRAS */
+
+.detail strong {
+    font-weight: 700;
 }
+
+
+/* =========================================================
+   BLOC INFOS
+========================================================= */
+
+.detail__infos {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-bottom: 27px;
+}
+
+
+/* PARTIE TEXTE DES INFOS */
+
+.detail__infos > div {
+    flex: 1;
+}
+
+
+/* =========================================================
+   BOUTON SITE OFFICIEL
+========================================================= */
 
 .bouton-officiel {
-  flex-shrink: 0;
-  padding: 14px 34px;
-  background-color: #67442f;
-  color: #f7f3f0;
-  border-radius: 30px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    min-width: 150px;
+
+    height: 40px;
+
+    padding: 0 20px;
+
+    background-color: #67442f;
+
+    border-radius: 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    transition: opacity 0.2s ease;
 }
 
 .bouton-officiel:hover {
-  opacity: 0.8;
-  color: #f7f3f0;
-  text-decoration: none;
+    opacity: 0.8;
 }
 
-.detail__description,
-.detail__acces {
-  margin-bottom: 40px;
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.detail__description {
+    margin-bottom: 27px;
 }
 
-.detail__description p {
-  text-align: justify;
-}
+
+/* PHRASE D'ACCROCHE */
 
 .detail__citation {
-  font-weight: 700;
+    margin-bottom: 10px !important;
+
+    font-weight: 700 !important;
+
+    text-align: left !important;
 }
 
-.detail__contact a {
-  font-weight: 700;
-  color: #67442f;
-  text-decoration: none;
+
+/* DESCRIPTION PRINCIPALE */
+
+.detail__description > p:last-child {
+    text-align: justify;
+
+    text-justify: inter-word;
 }
 
-.detail__contact a:hover {
-  opacity: 0.7;
-}
 
-@media (max-width: 650px) {
-  .detail__infos {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .hero-page .overlay h1 {
-    font-size: 56px;
-  }
+/* =========================================================
+   ACCÈS
+========================================================= */
+
+.detail__acces {
+    margin-bottom: 27px;
 }
