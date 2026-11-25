@@ -670,11 +670,12 @@ display: block;
 .wrapper .icon:first-child {
   margin-left: 0;
 }
+
 * ===== PAGE DÉTAIL ===== */
 main .detail {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 45px 6% 60px;
+  padding: 15px;
+  margin: 10px;
+  text-align: justify;
   box-sizing: border-box;
   color: #67442f;
   font-family: "Montserrat", Arial, sans-serif;
