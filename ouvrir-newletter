@@ -1,0 +1,21 @@
+<section class="newsletter-page">
+  <h1>Newsletter</h1>
+  <p class="newsletter-page__intro">
+    Inscrivez-vous à notre newsletter et découvrez en premier les nouvelles boutiques éphémères à Paris.
+  </p>
+
+  <form class="newsletter__form" action="#" method="post">
+    <div class="newsletter__texte">
+      <h2>Restez informé(e)</h2>
+      <p>Un e-mail de temps en temps, uniquement pour vous parler des pop-up stores à ne pas manquer.</p>
+    </div>
+
+    <div class="newsletter__champs">
+      <label for="newsletter-mail" class="sr-only">Votre adresse e-mail</label>
+      <input type="email" id="newsletter-mail" name="email" placeholder="Votre e-mail…" required>
+      <button type="submit" class="newsletter__bouton">S'inscrire</button>
+    </div>
+  </form>
+
+  <p class="newsletter-page__retour"><a href="index.html">← Retour à l'accueil</a></p>
+</section>
