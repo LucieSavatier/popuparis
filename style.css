@@ -1845,3 +1845,165 @@ figcaption { margin-top: 12px; font: italic 400 14px/1.6 Georgia, "Times New Rom
 .hero-page::after {
   background: rgba(103, 68, 47, 0.1);
 }
+/* ===== NEWSLETTER (fenêtre modale) ===== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.newsletter {
+  width: min(92vw, 460px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.newsletter::backdrop {
+  background: rgba(103, 68, 47, 0.55);
+}
+
+.newsletter__form {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 40px 32px 32px;
+  background: #f7f3f0;
+  color: #67442f;
+  border: 1px solid #67442f;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+/* Taches de couleur floues en décor (tons du site) */
+.newsletter__form::before,
+.newsletter__form::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.newsletter__form::before {
+  width: 150px;
+  height: 100px;
+  top: -40px;
+  right: 10px;
+  background: rgba(103, 68, 47, 0.22);
+  filter: blur(28px);
+}
+
+.newsletter__form::after {
+  width: 110px;
+  height: 110px;
+  bottom: -40px;
+  left: -20px;
+  background: rgba(103, 68, 47, 0.15);
+  filter: blur(24px);
+}
+
+.newsletter__texte h2 {
+  margin: 0 0 12px;
+  font-family: "Pinyon Script", cursive;
+  font-size: 52px;
+  font-weight: normal;
+  line-height: 1;
+  color: #67442f;
+}
+
+.newsletter__texte p {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #67442f;
+}
+
+.newsletter__champs {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter__champs input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 20px;
+  border: 1px solid #67442f;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #67442f;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.newsletter__champs input::placeholder {
+  color: rgba(103, 68, 47, 0.5);
+}
+
+.newsletter__champs input:focus {
+  box-shadow: 0 0 0 3px rgba(103, 68, 47, 0.2);
+}
+
+.newsletter__bouton {
+  padding: 0 24px;
+  border: 1px solid #67442f;
+  border-radius: 30px;
+  background: #67442f;
+  color: #f7f3f0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.newsletter__bouton:hover {
+  background: #f7f3f0;
+  color: #67442f;
+}
+
+.newsletter__fermer {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #67442f;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.newsletter__fermer:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 480px) {
+  .newsletter__form {
+    padding: 36px 22px 26px;
+    border-radius: 30px;
+  }
+  .newsletter__texte h2 {
+    font-size: 42px;
+  }
+  .newsletter__champs {
+    flex-direction: column;
+  }
+  .newsletter__bouton {
+    padding: 13px 24px;
+  }
+}
