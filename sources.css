@@ -1,0 +1,49 @@
+
+.sources { max-width: none; padding: 0 0 20px; }
+
+/* Bandeau d'en-tête marron, comme l'en-tête du site */
+.sources > header {
+  background: #67442f; color: #f7f3f0; text-align: center; padding: 70px 20px 55px;
+}
+.sources > header h1 {
+  margin: 0 0 18px; font-family: "Pinyon Script", cursive; font-weight: normal;
+  font-size: clamp(60px, 11vw, 105px); line-height: 1; color: #fff;
+}
+.sources > header p {
+  margin: 0 0 30px; font: 600 14px "Montserrat", Arial, sans-serif; letter-spacing: 6px; text-transform: uppercase; color: #fff;
+}
+.sources .sauts { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
+.sources .sauts a {
+  display: inline-flex; align-items: center; justify-content: center; min-width: 200px; height: 46px; padding: 0 22px;
+  border: 1px solid #f7f3f0; border-radius: 30px; color: #f7f3f0; text-decoration: none;
+  font: italic 400 15px Georgia, "Times New Roman", serif; transition: background-color .2s ease, color .2s ease;
+}
+.sources .sauts a:hover, .sources .sauts a:focus { background: #f7f3f0; color: #67442f; }
+
+.sources > section { max-width: 900px; margin: 0 auto; padding: 50px 24px 10px; }
+.sources h2 { margin: 0 0 22px; font: 400 36px/1.2 Georgia, "Times New Roman", serif; color: #67442f; }
+.sources h2::after { content: ""; display: block; width: 60px; height: 2px; background: #67442f; margin-top: 12px; }
+.sources .nb { margin-left: 10px; font: 500 13px "Montserrat", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+
+.sources .tools { margin: 26px 0 0; }
+.sources label { font: 600 13px "Montserrat", Arial, sans-serif; letter-spacing: 3px; text-transform: uppercase; }
+.sources input[type=search] {
+  display: block; width: 100%; margin-top: 10px; padding: 13px 24px; box-sizing: border-box;
+  border: 1px solid #67442f; border-radius: 30px; background: #f7f3f0; color: #5c3b28;
+  font: 500 16px "Montserrat", Arial, sans-serif;
+}
+.sources input[type=search]:focus { outline: 2px solid #67442f; outline-offset: 3px; }
+#aucun { margin-top: 20px; font-style: italic; }
+
+/* Chaque référence Zotero devient une carte (le !important écrase le style en ligne de Zotero) */
+.sources .csl-bib-body { margin: 0 !important; text-indent: 0 !important; line-height: 1.65 !important; }
+.sources .csl-entry {
+  margin: 0 0 16px; padding: 20px 28px; box-sizing: border-box;
+  background: #f7f3f0; color: #5c3b28; border: 1px solid #67442f; border-radius: 26px;
+  font: 500 15px/1.65 "Montserrat", Arial, sans-serif; overflow-wrap: anywhere;
+  transition: background-color .35s ease, color .35s ease, transform .35s ease;
+}
+.sources .csl-entry:hover { background: #67442f; color: #f7f3f0; transform: translateY(-3px); }
+.sources .csl-entry[hidden] { display: none; }
+.sources .csl-entry a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.sources .csl-entry i { font-family: Georgia, "Times New Roman", serif; font-size: 1.05em; }
