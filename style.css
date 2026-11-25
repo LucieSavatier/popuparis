@@ -1957,7 +1957,6 @@ figcaption { margin-top: 12px; font: italic 400 14px/1.6 Georgia, "Times New Rom
   box-sizing: border-box;
 }
 
-/* Taches de couleur floues en décor (tons du site) */
 .newsletter__form::before,
 .newsletter__form::after {
   content: "";
