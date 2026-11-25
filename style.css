@@ -673,12 +673,13 @@ display: block;
 
 * ===== PAGE DÉTAIL ===== */
 main .detail {
-  padding: 15px;
-  margin: 10px;
-  text-align: justify;
-  box-sizing: border-box;
-  color: #67442f;
-  font-family: "Montserrat", Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    box-sizing: border-box;
+    text-align: justify;
+    color: #67442f;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 .detail iframe {
