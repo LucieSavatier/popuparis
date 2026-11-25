@@ -1,7 +1,57 @@
 
+q, blockquote { quotes: "«\00a0" "\00a0»" "‹\00a0" "\00a0›"; }
+q::before { content: open-quote; }
+q::after  { content: close-quote; }
+blockquote p::before { content: open-quote; }
+blockquote p::after  { content: close-quote; }
+
+.footer-column h2 { margin: 0 0 9px; font: 700 17px Arial, Helvetica, sans-serif; color: #67442f; }
+address { margin: 0; font: 15px/1.6 "Montserrat", Arial, sans-serif; }
+
+#myCarousel .carousel-caption h4 {
+  margin: 0 0 8px; font-family: 'Pinyon Script', cursive;
+  font-size: 56px; font-weight: normal; color: #fff;
+}
+.carousel-inner > figure.item { margin: 0; }
+
+.categories h3 {
+  margin: 0 0 35px; font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px; font-weight: 400; color: #67442f;
+}
+
+.article { max-width: 860px; margin: 0 auto; padding: 60px 24px 70px;
+  font: 500 16px/1.85 "Montserrat", Arial, sans-serif; color: #5c3b28; }
+.article header h2 { margin: 0 0 18px; font: 400 40px/1.2 Georgia, "Times New Roman", serif; color: #67442f; }
+.article h3 { margin: 56px 0 18px; font: 400 30px/1.25 Georgia, "Times New Roman", serif; color: #67442f; }
+.article h3::after { content: ""; display: block; width: 60px; height: 2px; background: #67442f; margin-top: 12px; }
+.article .categories h3::after { margin-left: auto; margin-right: auto; }
+.article .chapo { font-size: 18px; color: #67442f; }
+.article .meta { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; opacity: .75; }
+.article a { text-decoration: underline; text-underline-offset: 3px; }
+.article .categorie, .article .carousel-control { text-decoration: none; }
+.article .categories { border-radius: 40px; margin: 50px 0 10px; }
+.article #myCarousel { border-radius: 40px; overflow: hidden; margin: 10px 0; }
+dfn { font-style: italic; font-weight: 700; }
+dt { margin-top: 18px; font: 400 21px Georgia, "Times New Roman", serif; color: #67442f; }
+dd { margin: 4px 0 0 0; }
+
+blockquote {
+  margin: 30px 0; padding: 22px 30px; border: 0; border-left: 4px solid #67442f;
+  border-radius: 0 30px 30px 0; background: #f7f3f0;
+  font: italic 400 21px/1.6 Georgia, "Times New Roman", serif; color: #67442f;
+}
+blockquote footer { margin-top: 10px; font: 500 13px "Montserrat", Arial, sans-serif; font-style: normal; color: #5c3b28; }
+blockquote footer::before { content: ""; }
+
+figure { margin: 34px 0; }
+figure img, figure video { display: block; max-width: 100%; height: auto; }
+.article figure > img { width: 100%; border-radius: 30px 30px 60px 60px; }
+.article figure > video { width: 100%; border-radius: 30px; }
+figcaption { margin-top: 12px; font: italic 400 14px/1.6 Georgia, "Times New Roman", serif; color: #67442f; }
+.carousel-inner > figure.item > figcaption { font-style: normal; }
+
 .sources { max-width: none; padding: 0 0 20px; }
 
-/* Bandeau d'en-tête marron, comme l'en-tête du site */
 .sources > header {
   background: #67442f; color: #f7f3f0; text-align: center; padding: 70px 20px 55px;
 }
@@ -35,7 +85,6 @@
 .sources input[type=search]:focus { outline: 2px solid #67442f; outline-offset: 3px; }
 #aucun { margin-top: 20px; font-style: italic; }
 
-/* Chaque référence Zotero devient une carte (le !important écrase le style en ligne de Zotero) */
 .sources .csl-bib-body { margin: 0 !important; text-indent: 0 !important; line-height: 1.65 !important; }
 .sources .csl-entry {
   margin: 0 0 16px; padding: 20px 28px; box-sizing: border-box;
