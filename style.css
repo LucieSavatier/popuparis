@@ -1030,49 +1030,62 @@ body {
 /* =========================================================
    BOUTON SITE OFFICIEL
 ========================================================= */
-button {
+/* ===== BOUTON OFFICIEL (animé) ===== */
+.bouton-officiel {
   position: relative;
+  display: inline-block;
+  flex-shrink: 0;
   padding: 15px 45px;
-  background: #fec195;
-  font-size: 17px;
+  background: #67442f;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 15px;
   font-weight: 500;
-  color: #67442f;
+  letter-spacing: 1px;
+  color: #f7f3f0;
+  text-decoration: none;
   cursor: pointer;
-  border: 1px solid #fec195;
-  border-radius: 8px;
+  border: 1px solid #67442f;
+  border-radius: 30px;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
 }
 
-button:hover {
-  border: 1px solid #f3b182;
+.bouton-officiel:hover {
+  color: #f7f3f0;
+  text-decoration: none;
+  border: 1px solid #7a5238;
   background: linear-gradient(
     85deg,
-    #fec195,
-    #fcc196,
-    #fabd92,
-    #fac097,
-    #fac39c
+    #67442f,
+    #6e4a34,
+    #77503a,
+    #6e4a34,
+    #67442f
   );
+  background-size: 200% 200%;
   animation: wind 2s ease-in-out infinite;
 }
 
 @keyframes wind {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  0% {
-    background-position: 50% 100%;
-  }
-
-  0% {
-    background-position: 0% 50%;
-  }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.icon-1 {
+/* Les petites plantes qui pendent du bouton */
+.bouton-officiel svg {
+  display: block;
+  fill: #f7f3f0;
+}
+
+.bouton-officiel .icon-1,
+.bouton-officiel .icon-2,
+.bouton-officiel .icon-3 {
   position: absolute;
   top: 0;
+  pointer-events: none;
+}
+
+.bouton-officiel .icon-1 {
   right: 0;
   width: 25px;
   transform-origin: 0 0;
@@ -1081,28 +1094,17 @@ button:hover {
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
 }
 
-button:hover .icon-1 {
+.bouton-officiel:hover .icon-1 {
   animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
-  transform: rotate(10deg);
 }
 
 @keyframes slay-1 {
-  0% {
-    transform: rotate(10deg);
-  }
-
-  50% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(10deg);
-  }
+  0%   { transform: rotate(10deg); }
+  50%  { transform: rotate(-5deg); }
+  100% { transform: rotate(10deg); }
 }
 
-.icon-2 {
-  position: absolute;
-  top: 0;
+.bouton-officiel .icon-2 {
   left: 25px;
   width: 12px;
   transform-origin: 50% 0;
@@ -1111,28 +1113,18 @@ button:hover .icon-1 {
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
 }
 
-button:hover .icon-2 {
+.bouton-officiel:hover .icon-2 {
   animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
   transform: rotate(0);
 }
 
 @keyframes slay-2 {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(15deg);
-  }
-
-  100% {
-    transform: rotate(0);
-  }
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(15deg); }
+  100% { transform: rotate(0); }
 }
 
-.icon-3 {
-  position: absolute;
-  top: 0;
+.bouton-officiel .icon-3 {
   left: 0;
   width: 18px;
   transform-origin: 50% 0;
@@ -1141,23 +1133,15 @@ button:hover .icon-2 {
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
 }
 
-button:hover .icon-3 {
+.bouton-officiel:hover .icon-3 {
   animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
   transform: rotate(0);
 }
 
 @keyframes slay-3 {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(0);
-  }
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(-5deg); }
+  100% { transform: rotate(0); }
 }
 
 /* =========================================================
