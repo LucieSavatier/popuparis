@@ -137,7 +137,7 @@
         <a href="#">FAQ</a>
         <a href="#">Mentions légales</a>
         <a href="#">Politiques de confidentialité</a>
-        <a href="ouvrir-newletter.html">Formulaire newsletter</a>
+        <a href="ouvrir-newsletter">Formulaire newsletter</a>
         <a href="#">Licence de réutilisation</a>
         <a href="sources.html">Sources</a>
       </div>
@@ -182,7 +182,22 @@
       © 2026 Popuparis. Tous droits réservés.
     </div>
   </footer>
+<dialog id="newsletter" class="newsletter" aria-labelledby="newsletter-titre">
+  <form class="newsletter__form" action="#" method="post">
+    <button type="button" class="newsletter__fermer" aria-label="Fermer">&times;</button>
 
+    <div class="newsletter__texte">
+      <h2 id="newsletter-titre">Restez informé(e)</h2>
+      <p>Inscrivez-vous à notre newsletter et découvrez en premier les nouvelles boutiques éphémères à Paris.</p>
+    </div>
+
+    <div class="newsletter__champs">
+      <label for="newsletter-mail" class="sr-only">Votre adresse e-mail</label>
+      <input type="email" id="newsletter-mail" name="email" placeholder="Votre e-mail…" required>
+      <button type="submit" class="newsletter__bouton">S'inscrire</button>
+    </div>
+  </form>
+</dialog>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
