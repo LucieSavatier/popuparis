@@ -1106,17 +1106,6 @@ body {
     margin-bottom: 27px;
 }
 
-
-/*
-   Le rendu que tu montres ne fait pas apparaître
-   la carte, seulement "Comment y aller ?".
-*/
-
-.detail__acces iframe {
-    display: none;
-}
-
-
 /* =========================================================
    CONTACT
 ========================================================= */
@@ -1224,14 +1213,12 @@ body {
 /* =========================================================
    RÉSEAUX SOCIAUX
 ========================================================= */
-
 .footer-social {
     align-items: flex-start;
 }
 
 
-/* Icônes */
-
+/* Icônes *
 .wrapper {
     display: flex;
 
@@ -1262,20 +1249,16 @@ body {
 
 .wrapper .icon a {
     margin: 0;
-
     width: 100%;
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: #67442f;
 }
 
 
 /* TOOLTIP */
-
 .tooltip {
     display: none;
 }
@@ -1287,20 +1270,13 @@ body {
 
 .identify-button {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     padding: 12px 22px;
-
     border: 1px solid #67442f;
-
     border-radius: 25px;
-
     font-family: "Montserrat", Arial, sans-serif;
-
     font-size: 12px !important;
-
     font-style: italic;
 }
 
@@ -1311,15 +1287,10 @@ body {
 
 .footer-bottom {
     padding: 20px;
-
     text-align: center;
-
     font-family: "Montserrat", Arial, sans-serif;
-
     font-size: 13px;
-
     color: #67442f;
-
     border-top: 1px solid rgba(103, 68, 47, 0.2);
 }
 
@@ -1329,45 +1300,34 @@ body {
 ========================================================= */
 
 @media (max-width: 900px) {
-
     .entete {
         height: 90px;
-
         padding: 0 25px;
     }
-
     .logo img {
         width: 170px;
     }
-
     .navigation {
         gap: 20px;
     }
-
     .navigation a {
         font-size: 19px;
     }
-
     .menu {
         margin-left: 25px;
     }
-
     .hero-page {
         height: 330px;
     }
-
     .hero-page .overlay h1 {
         font-size: 75px;
     }
-
     .detail {
         padding: 35px 30px 50px;
     }
-
     .detail__infos {
         gap: 25px;
     }
-
     .footer-main {
         padding: 0 30px 35px;
         gap: 30px;
@@ -1412,9 +1372,7 @@ body {
 
     .hero-page .overlay p {
         font-size: 10px;
-
         letter-spacing: 1.5px;
-
         padding: 0 15px;
     }
 
@@ -1431,41 +1389,32 @@ body {
 
     .detail p {
         font-size: 14px;
-
         line-height: 1.55;
     }
 
 
     /* INFOS */
-
     .detail__infos {
         display: block;
     }
-
     .bouton-officiel {
         margin-top: 20px;
     }
 
-
     /* DESCRIPTION */
-
     .detail__description > p:last-child {
         text-align: left;
     }
-
 
     /* FOOTER */
 
     .footer-main {
         flex-direction: column;
-
         padding: 0 25px 35px;
     }
-
     .footer-column {
         width: 100%;
     }
-
     .footer-logo img {
         width: 130px;
     }
