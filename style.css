@@ -671,7 +671,282 @@ display: block;
   margin-left: 0;
 }
 
-* ===== PAGE DÉTAIL ===== */
+/* =========================================================
+   POLICES
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Pinyon+Script&display=swap');
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #f7f3f0;
+
+    color: #67442f;
+
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.entete {
+    width: 100%;
+    height: 110px;
+
+    background-color: #67442f;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 45px;
+
+    position: relative;
+    z-index: 20;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    margin-right: auto;
+}
+
+.logo img {
+    width: 210px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.navigation a {
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+
+    font-weight: 400;
+
+    transition: opacity 0.2s ease;
+}
+
+.navigation a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   MENU HAMBURGER
+========================================================= */
+
+.menu {
+    margin-left: 40px;
+
+    position: relative;
+}
+
+.menu summary {
+    width: 43px;
+    height: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    list-style: none;
+}
+
+.menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu summary span {
+    width: 43px;
+    height: 2px;
+
+    display: block;
+
+    background-color: white;
+}
+
+
+/* MENU DÉROULANT */
+
+.menu nav {
+    position: absolute;
+
+    top: 50px;
+    right: 0;
+
+    width: 170px;
+
+    padding: 20px;
+
+    background-color: #67442f;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.menu nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-page {
+    position: relative;
+
+    width: 100%;
+    height: 365px;
+
+    overflow: hidden;
+
+    background-color: #211812;
+}
+
+
+/* IMAGE DU HERO */
+
+.hero-page > img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* VOILE SUR L'IMAGE */
+
+.hero-page::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(40, 20, 10, 0.15);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TEXTE DU HERO
+========================================================= */
+
+.hero-page .overlay {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    z-index: 2;
+
+    color: white;
+}
+
+
+/* TITRE */
+
+.hero-page .overlay h1 {
+    margin: 0 0 12px;
+
+    font-family: "Pinyon Script", cursive;
+
+    font-size: clamp(65px, 9vw, 105px);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    color: white;
+}
+
+
+/* SOUS-TITRE */
+
+.hero-page .overlay p {
+    margin: 0;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: white;
+}
+
+
+/* =========================================================
+   CONTENU PRINCIPAL
+========================================================= */
+
 .detail {
     width: 100%;
 
@@ -829,4 +1104,369 @@ display: block;
 
 .detail__acces {
     margin-bottom: 27px;
+}
+
+
+/*
+   Le rendu que tu montres ne fait pas apparaître
+   la carte, seulement "Comment y aller ?".
+*/
+
+.detail__acces iframe {
+    display: none;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.detail__contact {
+    margin-bottom: 20px;
+}
+
+.detail__contact a {
+    color: #67442f;
+
+    text-decoration: none;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    width: 100%;
+
+    background-color: #f7f3f0;
+
+    color: #67442f;
+
+    padding-top: 45px;
+}
+
+
+/* PARTIE PRINCIPALE */
+
+.footer-main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 40px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* LOGO */
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+
+/* COLONNES */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 180px;
+}
+
+
+/* TITRES FOOTER */
+
+.footer-column h3 {
+    margin: 0 0 15px;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #67442f;
+}
+
+
+/* LIENS */
+
+.footer-column a {
+    margin-bottom: 8px;
+
+    color: #67442f;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RÉSEAUX SOCIAUX
+========================================================= */
+
+.footer-social {
+    align-items: flex-start;
+}
+
+
+/* Icônes */
+
+.wrapper {
+    display: flex;
+
+    gap: 15px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 5px 0 15px;
+}
+
+.wrapper .icon {
+    position: relative;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #67442f;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #67442f;
+}
+
+.wrapper .icon a {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #67442f;
+}
+
+
+/* TOOLTIP */
+
+.tooltip {
+    display: none;
+}
+
+
+/* =========================================================
+   BOUTON IDENTIFICATION
+========================================================= */
+
+.identify-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+
+    border: 1px solid #67442f;
+
+    border-radius: 25px;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 12px !important;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   BAS DU FOOTER
+========================================================= */
+
+.footer-bottom {
+    padding: 20px;
+
+    text-align: center;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #67442f;
+
+    border-top: 1px solid rgba(103, 68, 47, 0.2);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .entete {
+        height: 90px;
+
+        padding: 0 25px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .navigation {
+        gap: 20px;
+    }
+
+    .navigation a {
+        font-size: 19px;
+    }
+
+    .menu {
+        margin-left: 25px;
+    }
+
+    .hero-page {
+        height: 330px;
+    }
+
+    .hero-page .overlay h1 {
+        font-size: 75px;
+    }
+
+    .detail {
+        padding: 35px 30px 50px;
+    }
+
+    .detail__infos {
+        gap: 25px;
+    }
+
+    .footer-main {
+        padding: 0 30px 35px;
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .entete {
+        height: 80px;
+
+        padding: 0 20px;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu {
+        margin-left: auto;
+    }
+
+
+    /* HERO */
+
+    .hero-page {
+        height: 300px;
+    }
+
+    .hero-page .overlay h1 {
+        font-size: 60px;
+    }
+
+    .hero-page .overlay p {
+        font-size: 10px;
+
+        letter-spacing: 1.5px;
+
+        padding: 0 15px;
+    }
+
+
+    /* CONTENU */
+
+    .detail {
+        padding: 30px 22px 45px;
+    }
+
+    .detail h2 {
+        font-size: 25px;
+    }
+
+    .detail p {
+        font-size: 14px;
+
+        line-height: 1.55;
+    }
+
+
+    /* INFOS */
+
+    .detail__infos {
+        display: block;
+    }
+
+    .bouton-officiel {
+        margin-top: 20px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .detail__description > p:last-child {
+        text-align: left;
+    }
+
+
+    /* FOOTER */
+
+    .footer-main {
+        flex-direction: column;
+
+        padding: 0 25px 35px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-logo img {
+        width: 130px;
+    }
 }
