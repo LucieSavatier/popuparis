@@ -5,20 +5,24 @@ q::after  { content: close-quote; }
 blockquote p::before { content: open-quote; }
 blockquote p::after  { content: close-quote; }
 
+/* ---------- Pied de page : titres passés en h2 (accessibilité) ---------- */
 .footer-column h2 { margin: 0 0 9px; font: 700 17px Arial, Helvetica, sans-serif; color: #67442f; }
 address { margin: 0; font: 15px/1.6 "Montserrat", Arial, sans-serif; }
 
+/* ---------- Carrousel : légendes en <h4> au lieu de <h3> ---------- */
 #myCarousel .carousel-caption h4 {
   margin: 0 0 8px; font-family: 'Pinyon Script', cursive;
   font-size: 56px; font-weight: normal; color: #fff;
 }
 .carousel-inner > figure.item { margin: 0; }
 
+/* ---------- Sections "catégories" en <h3> ---------- */
 .categories h3 {
   margin: 0 0 35px; font-family: Georgia, "Times New Roman", serif;
   font-size: 30px; font-weight: 400; color: #67442f;
 }
 
+/* ---------- Article (accueil et pages) ---------- */
 .article { max-width: 860px; margin: 0 auto; padding: 60px 24px 70px;
   font: 500 16px/1.85 "Montserrat", Arial, sans-serif; color: #5c3b28; }
 .article header h2 { margin: 0 0 18px; font: 400 40px/1.2 Georgia, "Times New Roman", serif; color: #67442f; }
@@ -50,8 +54,12 @@ figure img, figure video { display: block; max-width: 100%; height: auto; }
 figcaption { margin-top: 12px; font: italic 400 14px/1.6 Georgia, "Times New Roman", serif; color: #67442f; }
 .carousel-inner > figure.item > figcaption { font-style: normal; }
 
+/* =====================================================================
+   PAGE SOURCES
+   ===================================================================== */
 .sources { max-width: none; padding: 0 0 20px; }
 
+/* Bandeau d'en-tête marron, comme l'en-tête du site */
 .sources > header {
   background: #67442f; color: #f7f3f0; text-align: center; padding: 70px 20px 55px;
 }
@@ -85,6 +93,7 @@ figcaption { margin-top: 12px; font: italic 400 14px/1.6 Georgia, "Times New Rom
 .sources input[type=search]:focus { outline: 2px solid #67442f; outline-offset: 3px; }
 #aucun { margin-top: 20px; font-style: italic; }
 
+/* Chaque référence Zotero devient une carte (le !important écrase le style en ligne de Zotero) */
 .sources .csl-bib-body { margin: 0 !important; text-indent: 0 !important; line-height: 1.65 !important; }
 .sources .csl-entry {
   margin: 0 0 16px; padding: 20px 28px; box-sizing: border-box;
