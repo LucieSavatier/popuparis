@@ -113,11 +113,19 @@ a {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: rgba(103, 68, 47, 0.35);
 }
 
 .hero-page .overlay {
-  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  color: white;
 }
 
 .hero-page .overlay h1 {
