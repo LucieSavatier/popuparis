@@ -146,7 +146,7 @@
     </div>
   </main>
 
-    <footer class="footer">
+     <footer class="footer">
     <div class="footer-main">
 
       <div class="footer-logo">
@@ -157,17 +157,16 @@
 
       <div class="footer-column footer-links">
         <h3>AIDE &amp; INFORMATION</h3>
-        <a href="#">Contactez-nous</a>
-        <a href="#">FAQ</a>
+        <a href="a-propos.html">Contactez-nous</a>
+        <a href="faq.html">FAQ</a>
         <a href="#">Mentions légales</a>
         <a href="#">Politiques de confidentialité</a>
-        <a href="#">Formulaire newsletter</a>
+        <a href="ouvrir-newsletter">Formulaire newsletter</a>
         <a href="#">Licence de réutilisation</a>
         <a href="sources.html">Sources</a>
       </div>
 
-
-  <div class="footer-column footer-social">
+      <div class="footer-column footer-social">
         <h3>RESTEZ CONNECTÉ(E)</h3>
         <ul class="wrapper">
   <li class="icon facebook">
@@ -206,7 +205,24 @@
     <div class="footer-bottom">
       © 2026 Popuparis. Tous droits réservés.
     </div>
-
   </footer>
+<dialog id="newsletter" class="newsletter" aria-labelledby="newsletter-titre">
+  <form class="newsletter__form" action="#" method="post">
+    <button type="button" class="newsletter__fermer" aria-label="Fermer">&times;</button>
+
+    <div class="newsletter__texte">
+      <h2 id="newsletter-titre">Restez informé(e)</h2>
+      <p>Inscrivez-vous à notre newsletter et découvrez en premier les nouvelles boutiques éphémères à Paris.</p>
+    </div>
+
+    <div class="newsletter__champs">
+      <label for="newsletter-mail" class="sr-only">Votre adresse e-mail</label>
+      <input type="email" id="newsletter-mail" name="email" placeholder="Votre e-mail…" required>
+      <button type="submit" class="newsletter__bouton">S'inscrire</button>
+    </div>
+  </form>
+</dialog>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
