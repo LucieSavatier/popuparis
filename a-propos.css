@@ -180,3 +180,29 @@ html {
     font-size: 19px !important;
   }
 }
+.hero-page {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-page img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 300px;          /* ajustez la hauteur */
+  object-fit: cover;
+}
+
+.hero-page .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
