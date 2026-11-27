@@ -456,15 +456,14 @@ a {
 .detail__acces {
     margin-bottom: 27px;
 }
-@media (max-width: 650px) {
-  .detail__infos {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .hero-page .overlay h1 {
-    font-size: 56px;
-  }
+
+.detail__acces iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
 }
+
 /* =========================================================
    CONTACT
 ========================================================= */
