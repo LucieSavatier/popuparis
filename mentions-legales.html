@@ -21,6 +21,7 @@
   <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="complements.css">
+  <link rel="stylesheet" href="mentions-legales.css">
 
   <!-- CSS spécifique à la page -->
   <link rel="stylesheet" href="mentions-legales.css">
@@ -98,22 +99,6 @@
               <a href="mailto:contact@popuparis.fr">
                 contact@popuparis.fr
               </a>
-            </dd>
-          </div>
-
-          <div>
-            <dt>Directeur de la publication</dt>
-            <dd>
-              À compléter avec le nom de la personne responsable
-              de la publication.
-            </dd>
-          </div>
-
-          <div>
-            <dt>Hébergeur</dt>
-            <dd>
-              À compléter avec le nom de l'hébergeur réel,
-              son adresse postale et ses coordonnées.
             </dd>
           </div>
 
@@ -351,34 +336,78 @@
   </main>
 
 
-  <!-- PIED DE PAGE -->
-  <footer class="footer">
-
+<footer class="footer">
     <div class="footer-main">
 
-      <div class="footer-column footer-links">
+        <div class="footer-logo">
+            <img src="1.png" alt="Logo Popuparis" width="150" height="150">
+        </div>
 
-        <h3>AIDE &amp; INFORMATION</h3>
+        <div class="footer-column footer-links">
+            <h3>AIDE & INFORMATION</h3>
+            <ul>
+                <li><a href="contact.html">Contactez-nous</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="mentions-legales.html">Mentions légales</a></li>
+                <li><a href="politique.html">Politique de confidentialité</a></li>
+                <li>
+                    <a href="#" onclick="document.getElementById('newsletter').showModal(); return false;">
+                        Formulaire newsletter
+                    </a>
+                </li>
+                <li><a href="mentions-legales.html#licence">Licence de réutilisation</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </div>
 
-        <a href="contact.html">Contactez-nous</a>
-        <a href="faq.html">FAQ</a>
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique.html">Politique de confidentialité</a>
-        <a href="sources.html">Sources</a>
+        <div class="footer-column footer-social">
+            <h3>RESTEZ CONNECTÉ(E)</h3>
 
-        <a href="mailto:contact@popuparis.fr?subject=Question%20sur%20Popuparis">
-          Écrivez-nous
-        </a>
+            <ul class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <a href="#" aria-label="Facebook">
+                        <!-- Reprends ici le SVG Facebook de ton index -->
+                    </a>
+                </li>
 
-      </div>
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <a href="#" aria-label="Twitter">
+                        <!-- Reprends ici le SVG Twitter de ton index -->
+                    </a>
+                </li>
+
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <a href="#" aria-label="Instagram">
+                        <!-- Reprends ici le SVG Instagram de ton index -->
+                    </a>
+                </li>
+            </ul>
+
+            <button class="identify-button">
+                Identifiez-nous sur vos photos !
+            </button>
+        </div>
 
     </div>
 
     <div class="footer-bottom">
-      Popuparis · Tous droits réservés
+        <p>© 2026 Popuparis. Tous droits réservés.</p>
     </div>
+</footer>
 
-  </footer>
+<dialog id="newsletter" class="newsletter">
+    <button type="button" onclick="document.getElementById('newsletter').close()">
+        ×
+    </button>
 
-</body>
-</html>
+    <h2>Inscrivez-vous à notre newsletter</h2>
+    <p>Recevez nos dernières actualités et découvrez les pop-up stores à Paris.</p>
+
+    <form action="#" method="post">
+        <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+        <button type="submit">S'inscrire</button>
+    </form>
+</dialog>
