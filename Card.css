@@ -42,11 +42,11 @@ a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    width: 230px;
+    width: 130px;
 }
 
 .logo img {
-    width: 210px;
+    width: 120px;
     height: auto;
     display: block;
 }
