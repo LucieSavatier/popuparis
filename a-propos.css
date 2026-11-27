@@ -206,39 +206,69 @@ html {
   justify-content: center;
   text-align: center;
 }
-/* ===== BANDEAU D'EN-TÊTE DE PAGE ===== */
+/* ===== BANDEAU D'EN-TÊTE DE PAGE (autonome) ===== */
 .hero-page {
   position: relative;
   width: 100%;
-  height: 570px;          /* même hauteur que l'accueil ; ajustez si besoin */
+  height: 450px;
   overflow: hidden;
+  background: #67442f;
 }
 
-.hero-page img {
+.hero-page > img {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* léger voile marron pour la lisibilité du texte */
 .hero-page::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(103, 68, 47, 0.1);
+  background: rgba(103, 68, 47, 0.25);
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero-page .overlay {
-  z-index: 5;   /* au-dessus de l'image et du voile */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-page .overlay h1 {
+  margin: 0;
+  font-family: "Pinyon Script", cursive;
+  font-size: 115px;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+}
+
+.hero-page .overlay p {
+  margin: 25px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  color: #fff;
 }
 
 @media (max-width: 650px) {
-  .hero-page { height: 380px; }
+  .hero-page { height: 320px; }
   .hero-page .overlay h1 { font-size: 64px; }
   .hero-page .overlay p { font-size: 12px; letter-spacing: 4px; }
 }
